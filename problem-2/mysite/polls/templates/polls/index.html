@@ -1,0 +1,15 @@
+{%load static%}
+<link rel="stylesheet" href="{% static 'polls/style.css' %}">
+<!-- 만약 view 함수에 의해 latest_question_list 가 존재한다면 -->
+{% if latest_question_list %}
+<ul>
+    {% for question in latest_question_list %}
+        <li><a href="{%url 'polls:detail' question.id%}">{{question.question_text}}
+        </a></li>
+    {%endfor%}
+</ul>
+<!-- latest_question_list가 존재하지 않음-->
+{% else %}
+<p>No polls are available.</p>
+<!-- if문 끝내기 -->
+{% endif %}
