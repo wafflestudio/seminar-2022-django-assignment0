@@ -5,9 +5,12 @@
 
 POST /catfact/create/
 request: {
-    "품종": "catfact"
+    "breed": "품종 이름"
+    "catfact": "catfact 내용"
 }
 
 #수정
+PUT
 
 #삭제
+DELETE /catfact/1
