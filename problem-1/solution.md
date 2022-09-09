@@ -3,6 +3,8 @@
 ### 1. catfact 등록하기
 - URL : /catfact/
 - METHOD : POST
+
+####[example]
 ```
 request = {
     "cat-breed": "siamese",
@@ -13,6 +15,8 @@ request = {
 ### 2. catfact 수정하기
 - URL : /catfact/<fact-id>
 - METHOD : POST
+
+####[example]
 ```
 request = {
     "fact-id" : 1
@@ -24,6 +28,8 @@ request = {
 ### 3. 삭제
 - URL : /catfact/<fact-id>
 - METHOD : DELETE
+
+####[example]
 ```
 request = {
     "fact-id" : 1
