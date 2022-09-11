@@ -1,17 +1,22 @@
 from django import http
 from django.views.decorators import csrf
+from rest_framework import decorators
 from rest_framework import parsers
+from rest_framework import response
+from rest_framework import status
 
 from snippets import models
 from snippets import serializers
 
 
 @csrf.csrf_exempt
-def snippet_list(request: http.HttpRequest) -> http.HttpResponse:
+@decorators.api_view(["GET", "POST"])
+def snippet_list(request: http.HttpRequest, format = None) -> response.Response: # -> http.HttpResponse:
     if request.method == "GET":
         snippets = models.Snippet.objects.all()
         serializer = serializers.SnippetSerializer(snippets, many=True)
-        return http.JsonResponse(serializer.data, safe=False)
+        return response.Response(serializer.data)
+        # return http.JsonResponse(serializer.data, safe=False)
         
     elif request.method == "POST":
         data = parsers.JSONParser().parse(request)
@@ -19,20 +24,25 @@ def snippet_list(request: http.HttpRequest) -> http.HttpResponse:
 
         if serializer.is_valid():
             serializer.save()
-            return http.JsonResponse(serializer.data, status=201)
-        return http.JsonResponse(serializer.errors, status=400)
+            return response.Response(serializer.data, status=status.HTTP_201_CREATED)
+            # return http.JsonResponse(serializer.data, status=201)
+        return response.Response(serializer.data, status=status.HTTP_400_BAD_REQUEST)
+        # return http.JsonResponse(serializer.errors, status=400)
 
 
 @csrf.csrf_exempt
-def snippet_detail(request: http.HttpRequest, pk: int) -> http.HttpResponse:
+@decorators.api_view(["GET", "POST", "DELETE"])
+def snippet_detail(request: http.HttpRequest, pk: int, format = None) -> response.Response: # -> http.HttpResponse:
     try:
         snippet: models.Snippet = models.Snippet.objects.get(pk=pk)
     except models.Snippet.DoesNotExist:
-        return http.HttpResponse(status=404)
+        return response.Response(serializer.data, status=status.HTTP_404_NOT_FOUND)
+        # return http.HttpResponse(status=404)
 
     if request.method == "GET":
         serializer = serializers.SnippetSerializer(snippet)
-        return http.JsonResponse(serializer.data, status=201)
+        return response.Response(serializer.data)
+        # return http.JsonResponse(serializer.data, status=201)
         
     elif request.method == "POST":
         data = parsers.JSONParser().parse(request)
@@ -40,9 +50,12 @@ def snippet_detail(request: http.HttpRequest, pk: int) -> http.HttpResponse:
 
         if serializer.is_valid():
             serializer.save()
-            return http.JsonResponse(serializer.data, status=201)
-        return http.JsonResponse(serializer.errors, status=400)
+            return response.Response(serializer.data)
+            # return http.JsonResponse(serializer.data, status=201)
+        return response.Response(serializer.data, status=status.HTTP_400_BAD_REQUEST)
+        # return http.JsonResponse(serializer.errors, status=400)
 
     elif request.method == "DELETE":
         snippet.delete()
-        return http.HttpResponse(status=204)
+        return response.Response(serializer.data, status=status.HTTP_204_NO_CONTENT)
+        # return http.HttpResponse(status=204)
