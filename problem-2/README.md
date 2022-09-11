@@ -50,13 +50,30 @@ $ python manage.py shell
 # if you want to create admin user
 $ python manage.py createsuperuser
 ```
+#
 
 ## Part 3
+- View 추가
+- HttpResponse 조정
+- Template 사용
 
+#
 ## Part 4
-
+- Django GenericView 사용
+#
 ## Part 5
+- test code 작성법 및 중요성
 
+To run test code 
+```shell
+$ python manage.py test {App Name: polls}
+```
+
+Django manager detects django.test.TestCase object
+#
 ## Part 6
+- Django App Customizing
 
+#
 ## Part 7
+- Django Admin Page Customizing
