@@ -27,3 +27,5 @@ http://127.0.0.1:8000/snippets.json  # JSON suffix
 http://127.0.0.1:8000/snippets.api   # Browsable API suffix
 
 ## Tutorial 3
+
+function based view -> class based view + use mixin
