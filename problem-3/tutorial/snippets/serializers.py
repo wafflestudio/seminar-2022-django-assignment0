@@ -1,8 +1,10 @@
 from typing import Dict
 
+from django.contrib.auth import models
 from django.db.models import query
 from rest_framework import serializers
-from snippets import models
+
+from snippets import models as snippet_models
 
 
 # class SnippetSerializer(serializers.Serializer):
@@ -27,6 +29,15 @@ from snippets import models
 
 
 class SnippetSerializer(serializers.ModelSerializer):
+    owner = serializers.ReadOnlyField(source='owner.username')
+    
     class Meta:
-        model = models.Snippet
+        model = snippet_models.Snippet
         fields = ['id', 'title', 'code', 'linenos', 'language', 'style']
+
+class UserSerializer(serializers.ModelSerializer):
+    snippets = serializers.PrimaryKeyRelatedField(many=True, queryset=snippet_models.Snippet.objects.all())
+
+    class Meta:
+        model = models.User
+        fields = ['id', 'username', 'snippets']

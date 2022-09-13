@@ -5,6 +5,8 @@ from snippets import views
 urlpatterns = [
     urls.path("snippets/", views.SnippetList.as_view()),
     urls.path("snippets/<int:pk>/", views.SnippetDetail.as_view()),
+    urls.path("users/", views.UserList.as_view()),
+    urls.path("users/<int:pk>/", views.UserDetail.as_view()),
 ]
 
 """
@@ -14,3 +16,7 @@ urlpatterns = [
 ]
 """
 urlpatterns = patterns.format_suffix_patterns(urlpatterns)
+
+urlpatterns += [
+    urls.path('api-auth/', urls.include('rest_framework.urls')),
+]

@@ -1,4 +1,5 @@
 from django import http
+from django.contrib.auth import models
 from django.views.decorators import csrf
 from rest_framework import decorators
 from rest_framework import parsers
@@ -7,18 +8,38 @@ from rest_framework import status
 from rest_framework import views
 from rest_framework import mixins
 from rest_framework import generics
+from rest_framework import permissions
 
-from snippets import models
+from snippets import models as snippet_models
+from snippets import permissions as snippet_permissions
 from snippets import serializers
 
 class SnippetList(generics.ListCreateAPIView):
-    queryset = models.Snippet.objects.all()
+    queryset = snippet_models.Snippet.objects.all()
     serializer_class = serializers.SnippetSerializer
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+
+    def perform_create(self, serializer: serializers.SnippetSerializer):
+        serializer.save(owner=self.request.user)
 
 
 class SnippetDetail(generics.RetrieveUpdateDestroyAPIView):
-    queryset = models.Snippet.objects.all()
+    queryset = snippet_models.Snippet.objects.all()
     serializer_class = serializers.SnippetSerializer
+    permission_classes = [
+        permissions.IsAuthenticatedOrReadOnly,
+        snippet_permissions.IsOwnerOrReadOnly,
+    ]
+
+
+class UserList(generics.ListAPIView):
+    queryset = models.User.objects.all()
+    serializer_class = serializers.UserSerializer
+
+
+class UserDetail(generics.RetrieveAPIView):
+    queryset = models.User.objects.all()
+    serializer_class = serializers.UserSerializer
 
 """
 Class Based View : Rest framework GenericAPIView + MixIn 
