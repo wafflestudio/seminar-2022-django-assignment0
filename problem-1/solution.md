@@ -3,14 +3,27 @@
 
 #등록
 
-POST /catfact/create/
+POST /catfacts/create/
 request: {
     "breed": "품종 이름"
     "catfact": "catfact 내용"
 }
 
 #수정
-PUT
+
+PUT /catfacts/1
+request: {
+    "breed": "수정된 품종 이름"
+    "catfact": "수정된 catfact 내용"
+}
+
+or
+
+PATCH /catfacts/1
+request: {
+    "catfact": "수정된 catfact 내용"
+}
 
 #삭제
-DELETE /catfact/1
+
+DELETE /catfacts/1
