@@ -20,13 +20,12 @@ class DetailView(generic.DeleteView):
     def get_queryset(self):
         return Question.objects.filter(pub_date__lte=timezone.now())
 
-# def results(request, question_id):
-#     question = get_object_or_404(Question, pk = question_id)
-#     return render(request, 'polls/results.html', {'question': question})
-
 class ResultsView(generic.DetailView):
     model = Question
     template_name = 'polls/results.html'
+
+    def get_queryset(self):
+        return Question.objects.filter(pub_date__lte=timezone.now())
 
 def vote(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
