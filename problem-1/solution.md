@@ -21,11 +21,11 @@ request: {<br>
     "fact": "fact-info"<br>
 }
 
-###특정 품종의 catfact를 수정할 때
-####PUT /breeds/{specific-breed}/facts/{fact-id}
+###특정 품종의 catfact를 수정할 때<br>
+####PUT /breeds/{specific-breed}/facts/{fact-id}<br>
 request: {<br>
     "fact": "new-fact-info"<br>
 }
  
-###특정 품종의 catfact를 삭제할 때
+###특정 품종의 catfact를 삭제할 때<br>
 ####DELETE /breeds/{specific-breed}/facts/{fact-id}
