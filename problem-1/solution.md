@@ -3,7 +3,7 @@
 base url<br>
 https://catfact.ninza
 
-###특정 품종의 고양이를 추가할 때<br>
+<h3>특정 품종의 고양이를 추가할 때<br>
 ####POST /breeds/{specific-breed}<br>
 request: {<br>
     "breed": "breed-info"<br>
