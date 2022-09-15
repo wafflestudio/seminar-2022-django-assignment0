@@ -3,8 +3,8 @@
 base url<br>
 https://catfact.ninza
 
-<h3>특정 품종의 고양이를 추가할 때<br>
-####POST /breeds/{specific-breed}<br>
+<h3>특정 품종의 고양이를 추가할 때</h3>
+<h4>POST /breeds/{specific-breed}</h4>
 request: {<br>
     "breed": "breed-info"<br>
     "country": "country-info"<br>
@@ -14,18 +14,17 @@ request: {<br>
 }
 
 
-###특정 품종의 catfact를 등록할 때
-
-####POST /breeds/{specific-breed}/facts<br>
+<h3>특정 품종의 catfact를 등록할 때</h3>
+<h4>POST /breeds/{specific-breed}/facts</h4>
 request: {<br>
     "fact": "fact-info"<br>
 }
 
-###특정 품종의 catfact를 수정할 때<br>
-####PUT /breeds/{specific-breed}/facts/{fact-id}<br>
+<h3>특정 품종의 catfact를 수정할 때</h3>
+<h4>PUT /breeds/{specific-breed}/facts/{fact-id}</h4>
 request: {<br>
     "fact": "new-fact-info"<br>
 }
  
-###특정 품종의 catfact를 삭제할 때<br>
-####DELETE /breeds/{specific-breed}/facts/{fact-id}
+<h3>특정 품종의 catfact를 삭제할 때</h3>
+<h4>DELETE /breeds/{specific-breed}/facts/{fact-id}</h4>
