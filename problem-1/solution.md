@@ -26,6 +26,6 @@ request: {<br>
 request: {<br>
     "fact": "new-fact-info"<br>
 }
-
+ 
 ###특정 품종의 catfact를 삭제할 때
 ####DELETE /breeds/{specific-breed}/facts/{fact-id}
