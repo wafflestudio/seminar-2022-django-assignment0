@@ -11,7 +11,7 @@ Method|POST|PUT|DELETE
 
 ## 품종 등록
 
-```json
+```
 POST /breeds
 body: {
     "breed": "breed of cat"
@@ -23,7 +23,7 @@ Content-Type: "application/json"
 
 ### 등록
 
-```json
+```
 POST /breeds/{breed-id}/facts
 body: {
     "fact": "cat fact to post"
@@ -33,7 +33,7 @@ Content-Type: "application/json"
 
 ### 수정
 
-```json
+```
 PUT /breeds/{breed-id}/facts/{fact-id}
 body: {
     "fact": "new cat fact"
@@ -43,6 +43,6 @@ Content-Type: "application/json"
 
 ### 삭제
 
-```json
+```
 DELETE /breeds/{breed-id}/facts/{fact-id}
 ```
