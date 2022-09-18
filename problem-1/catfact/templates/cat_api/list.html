@@ -1,0 +1,9 @@
+{%if catList%}
+<ul>
+    {%for cat in catList%}
+    <li><a href="/catfact/{{cat.id}}/">{{cat.fact}}</a></li>
+    {%endfor%}
+</ul>
+{%else%}
+<p>등록된 catfact가 없습니다.</p>
+{%endif%}
