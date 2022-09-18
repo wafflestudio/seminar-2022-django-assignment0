@@ -4,7 +4,7 @@
 https://catfact.ninza
 
 <h3>특정 품종의 고양이를 추가할 때</h3>
-<h4>POST /breeds/{specific-breed}</h4>
+<h4>POST /breeds</h4>
 request: {<br>
     "breed": "breed-info"<br>
     "country": "country-info"<br>
