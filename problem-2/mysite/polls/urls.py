@@ -1,5 +1,4 @@
 from django import urls
-
 from polls import views
 
 app_name = "polls"
