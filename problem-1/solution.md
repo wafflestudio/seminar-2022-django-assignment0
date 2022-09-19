@@ -1,16 +1,16 @@
 <!-- TODO -->
 
-HTTP POST , http://catfact/cat/
+HTTP POST , http://catfact/siamese
 {
 “catkind” : “siamese",
 “catfact” : “cute”
 }
 
 
-HTTP PUT, http://catfact/cat/siamese
+HTTP PUT, http://catfact/siamese
 {
 "name”:”siamese,
 “catfact”:”cool”
 }
 
-HTTP DELETE, http://catfact/cat/siamese
+HTTP DELETE, http://catfact/siamese
