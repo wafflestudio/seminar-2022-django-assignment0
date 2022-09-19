@@ -27,7 +27,7 @@ body: {"fact1": {fact1},
 
 /breeds/{breed-id} : 해당 품종 전체 수정
 ```
-PUT /breeds
+PUT /breeds/{breed-id}
 
 body: {"breed": {품종}}
 ```
