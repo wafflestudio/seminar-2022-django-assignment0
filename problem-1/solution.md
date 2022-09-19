@@ -1,8 +1,7 @@
 <!-- TODO -->
 새 품종을 등록
-
+```
 POST /catfact
-
 request: {
     "breed": ""
 }
@@ -19,10 +18,10 @@ response:
 - 이외: HTTP/1.1 400 Bad Request {
     "message" : "error message"
 }
-
+```
 
 특정 품종을 삭제
-
+```
 DELETE /catfact
 
 request: {
@@ -38,9 +37,9 @@ response:
 - 이외: HTTP/1.1 400 Bad Request {
     "message" : "error message"
 }
-
+```
 특정 품종의 catfact 등록
-
+```
 POST /catfact/<str:breed>
 
 request: {
@@ -60,9 +59,9 @@ response:
 - 이외: HTTP/1.1 400 Bad Request {
     "message" : "error message"
 }
-
+```
 특정 품종의 catfact 삭제
-
+```
 DELETE /catfact/<str:breed>/<int:id>
 
 request: {}
@@ -77,9 +76,9 @@ response:
 - 이외: HTTP/1.1 400 Bad Request {
     "message" : "error message"
 }
-
+```
 특정 품종의 catfact 수정
-
+```
 PUT /catfact/<str:breed>/<int:id>
 
 request: {
@@ -100,9 +99,9 @@ response:
 - 이외: HTTP/1.1 400 Bad Request {
     "message" : "error message"
 }
-
+```
 특정 품종의 catfact 중 하나를 랜덤으로 불러옴
-
+```
 GET /catfact/<str:breed>
 
 request : {}
@@ -123,9 +122,9 @@ response:
 - 이외: HTTP/1.1 400 Bad Request {
     "message" : "error message"
 }
-
+```
 catfact 중 하나를 랜덤으로 불러옴
-
+```
 GET /catfact
 
 request : {}
@@ -142,9 +141,9 @@ response:
 - 이외: HTTP/1.1 400 Bad Request {
     "message" : "error message"
 }
-
+```
 특정 품종의 catfact를 모두 불러옴
-
+```
 GET /catfacts/<str:breed>
 
 request : {}
@@ -170,9 +169,9 @@ response :
 - 이외: HTTP/1.1 400 Bad Request {
     "message" : "error message"
 }
-
+```
 모든 품종의 catfact를 모두 불러옴
-
+```
 GET /catfacts/
 
 request : {}
@@ -214,3 +213,4 @@ response :
 - 이외: HTTP/1.1 400 Bad Request {
     "message" : "error message"
 }
+```
