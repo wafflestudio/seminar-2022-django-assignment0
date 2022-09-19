@@ -5,7 +5,7 @@
 
 /breeds : 품종 등록
 
-```json
+```
 POST /breeds
 
 body: {"breed": {품종}}
@@ -13,7 +13,7 @@ body: {"breed": {품종}}
 
 /breeds/{breed-id}/facts : 해당 품종의 fact 등록
 
-```json
+```
 POST /breeds/{breed-id}/facts
 
 body: {"fact1": {fact1},
@@ -26,14 +26,14 @@ body: {"fact1": {fact1},
 - **PUT**
 
 /breeds/{breed-id} : 해당 품종 전체 수정
-```json
+```
 PUT /breeds
 
 body: {"breed": {품종}}
 ```
 
 /breeds/{breed-id}/facts : 해당 품종의 fact 전체 수정
-```json
+```
 PUT /breeds/{breed-id}/facts
 
 body: {"fact1": {fact1},
@@ -43,13 +43,13 @@ body: {"fact1": {fact1},
 - **PATCH**
 
 /breeds/{breed-id} : 해당 품종 일부 수정
-```json
+```
 PATCH /breeds
 
 body: {"breed": {품종}}
 ```
 /breeds/{breed-id}/facts: 해당 품종의 fact 일부 수정
-```json
+```
 PATCH /breeds/{breed-id}/facts
 
 body: {"fact2": {fact2}}
@@ -65,8 +65,11 @@ body: {"fact2": {fact2}}
 
 /breeds/{breed-id}/facts : 해당 품종 fact 삭제
 
-```json
+```
 DELETE /breeds...
 ```
 
+
+
+성공적인 request의 경우 200번대 status code를, 잘못된 request는 400번대 status code를 return함.
 
