@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5cc1c63a-a4e9-4db8-bea1-1c7a3dfbad75" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../problem-2/djangoApp/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../problem-2/djangoApp/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../problem-2/djangoApp/.idea/djangoApp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../problem-2/djangoApp/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../problem-2/djangoApp/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../problem-2/djangoApp/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../problem-2/djangoApp/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../problem-2/djangoApp/djangoApp/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../problem-2/djangoApp/djangoApp/asgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../problem-2/djangoApp/djangoApp/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../problem-2/djangoApp/djangoApp/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../problem-2/djangoApp/djangoApp/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../problem-2/djangoApp/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../problem-2/djangoApp/polls/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../problem-2/djangoApp/polls/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../problem-2/djangoApp/polls/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../problem-2/djangoApp/polls/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../problem-2/djangoApp/polls/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../problem-2/djangoApp/polls/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../problem-2/djangoApp/polls/static/polls/images/background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../problem-2/djangoApp/polls/static/polls/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../problem-2/djangoApp/polls/templates/admin/base_site.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../problem-2/djangoApp/polls/templates/polls/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../problem-2/djangoApp/polls/templates/polls/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../problem-2/djangoApp/polls/templates/polls/results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../problem-2/djangoApp/polls/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../problem-2/djangoApp/polls/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../problem-2/djangoApp/polls/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/tutorial.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snippets/permissions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snippets/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snippets/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tutorial/quickstart/serializers.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2EzPjAomECvZ42sDVc78JtCSal8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/tutorial" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="tutorial" type="Python.DjangoServer" factoryName="Django server">
+      <module name="tutorial" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5cc1c63a-a4e9-4db8-bea1-1c7a3dfbad75" name="Changes" comment="" />
+      <created>1663595571443</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663595571443</updated>
+      <workItem from="1663595576665" duration="2579000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
