@@ -1,5 +1,5 @@
 <!-- TODO -->
-PUT /catfacts/1
+POST /catfacts
 {
 "breed" : "persian",
 "fact" : "It is a long-haired breed of cat characterized by a round face and short muzzle."
