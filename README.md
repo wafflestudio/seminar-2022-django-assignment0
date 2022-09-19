@@ -10,21 +10,21 @@
 [Status Code](https://developer.mozilla.org/ko/docs/Web/HTTP/Status)
 [Rest API](https://meetup.toast.com/posts/92)
 
-제출: [problem-1/solution.md](./problem-1/solution.md) 수정하기
+제출: [problem-1/solution.md](problem-1/solution.md) 수정하기
 
 ## problem 2
 [Django Tutorial](https://docs.djangoproject.com/en/4.1/intro/)을 진행해보자.
 
 > 최소한 Writing your first Django app, part 7 까지 진행해주세요.
 
-제출: 완료된 결과를 [problem-2](./problem-2/) 에 저장하기
+제출: 완료된 결과를 [problem-2](problem-2/) 에 저장하기
 
 ## problem 3
 [Django Rest Framework Tutorial](https://www.django-rest-framework.org/tutorial/quickstart/)을 진행해보자.
 
 > Tutorial 6: ViewSets & Routers 까지 진행해주세요.
 
-제출: 완료된 결과를 [problem-3](./problem-3/)에 저장하기
+제출: 완료된 결과를 [problem-3](problem-3/)에 저장하기
 
 ## 제출 방법
 
