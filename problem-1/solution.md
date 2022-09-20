@@ -11,10 +11,10 @@ POST /breeds
 body: {"breed": {품종}}
 ```
 
-/breeds/{breed-id}/facts : 해당 품종의 fact 등록
+/facts : 해당 품종의 fact 등록
 
 ```
-POST /breeds/{breed-id}/facts
+POST /facts
 
 body: {"fact1": {fact1},
        "fact2": {fact2}...}
@@ -32,12 +32,11 @@ PUT /breeds/{breed-id}
 body: {"breed": {품종}}
 ```
 
-/breeds/{breed-id}/facts : 해당 품종의 fact 전체 수정
+/facts/{facts-id} : 해당 품종의 fact 전체 수정
 ```
-PUT /breeds/{breed-id}/facts
+PUT /facts/{facts-id}
 
-body: {"fact1": {fact1},
-       "fact2": {fact2}...}
+body: {"fact": {fact}}
 ```
 
 - **PATCH**
@@ -48,11 +47,11 @@ PATCH /breeds
 
 body: {"breed": {품종}}
 ```
-/breeds/{breed-id}/facts: 해당 품종의 fact 일부 수정
+/facts/{fact-id}: 해당 품종의 fact 일부 수정
 ```
-PATCH /breeds/{breed-id}/facts
+PATCH /facts/{fact-id}
 
-body: {"fact2": {fact2}}
+body: {"fact": {fact}}
 ```
 
 >삭제
@@ -63,8 +62,9 @@ body: {"fact2": {fact2}}
 
 /breeds/{breed-id} : 해당 품종 삭제
 
-/breeds/{breed-id}/facts : 해당 품종 fact 삭제
+/facts : fact 삭제
 
+/facts/{fact-id} : 특정 fact 삭제
 ```
 DELETE /breeds...
 ```
